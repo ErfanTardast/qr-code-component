@@ -1,0 +1,66 @@
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: hsl(218, 44%, 22%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px; /* Adjusted for 50% smaller */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjusted for 50% smaller */
+  padding: 10px; /* Adjusted for 50% smaller */
+  max-width: 20%; /* Adjusted for 50% smaller */
+  width: 100%; /* Make the container full width on smaller screens */
+}
+
+.qr-code {
+  max-width: 100%;
+  border-radius: 7.5px;
+}
+
+.headline {
+  font-size: 25px;
+  font-weight: 700;
+  color: hsl(218, 44%, 22%);
+  margin-top: 10px;
+}
+
+.subtext {
+  font-size: 15px;
+  color: hsl(220, 15%, 55%);
+  margin-top: 5px;
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  color: hsl(228, 45%, 44%);
+  margin-top: 10px;
+}
+
+/* Media Query for screens 600px and below (typical mobile screens) */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  .headline {
+    font-size: 18px; /* Increase font size for better readability on small screens */
+  }
+
+  .subtext {
+    font-size: 12px; /* Increase font size for better readability on small screens */
+  }
+
+  .attribution {
+    font-size: 10px; /* Increase font size for better readability on small screens */
+  }
+}
